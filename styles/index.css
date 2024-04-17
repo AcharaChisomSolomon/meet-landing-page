@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Red-Hat-Display-500';
+    src: url(../assets/fonts/RedHatDisplay-Medium.ttf);
+}
+@font-face {
+    font-family: 'Red-Hat-Display-900';
+    src: url(../assets/fonts/RedHatDisplay-Black.ttf);
+}
+:root {
+    --font-family: 'Red-Hat-Display-500', sans-serif;
+    --font-family-bold: 'Red-Hat-Display-900', sans-serif;
+
+    --text-color-primary: #87879d;
+    --text-color-secondary: #fafafa;
+
+    --header-color-primary: #28283d;
+    --header-color-secondary: var(--text-color-secondary);
+    --header-color-tertiary: var(--btn-bg-primary-color);
+
+    --btn-text-primary-color: #fff;
+    --btn-text-secondary-color: #8fe3f9;
+
+    --btn-bg-primary-color: #4d96a9;
+    --btn-bg-secondary-color-hover: #71c0d4;
+    --btn-bg-secondary-color: #855fb1;
+    --btn-bg-secondary-color-hover: #b18bdd;
+}
