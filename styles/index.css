@@ -285,4 +285,17 @@ footer p {
         linear-gradient(to bottom, rgba(77, 150, 168, 0.8), rgba(77, 150, 168, 0.8)), 
         url(../assets/desktop/image-footer.jpg);
     }
+    footer section {
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+        align-items: center;
+    }
+    footer section h2 {
+        max-inline-size: 14ch;
+        text-align: left;
+    }
+    footer section p {
+        max-inline-size: 30ch;
+    }
 }
