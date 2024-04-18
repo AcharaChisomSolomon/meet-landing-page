@@ -297,5 +297,6 @@ footer p {
     }
     footer section p {
         max-inline-size: 30ch;
+        text-align: left;
     }
 }
