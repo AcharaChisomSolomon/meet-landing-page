@@ -119,6 +119,10 @@ header {
 .blue:hover {
     background-color: #71c0d4
 }
+.small-btn {
+    padding: 1rem 1.5rem;
+
+}
 .purple {
     background-color: var(--btn-bg-secondary-color);
 }
@@ -161,7 +165,7 @@ main .images {
     max-width: 70rem;
     justify-items: center;
     gap: 1.5rem;
-    margin: 0 auto;
+    margin: 3rem auto 0;
 }
 .main-description__starter {
     letter-spacing: 0.25rem;
