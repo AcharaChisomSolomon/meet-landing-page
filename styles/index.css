@@ -153,7 +153,7 @@ header section p {
 
 .img-left {
     background-image: url(../assets/tablet/image-hero.png);
-    background-position: center;
+    background-position: top center;
     background-size: cover;
     height: 10rem;
     margin-bottom: 4rem;
