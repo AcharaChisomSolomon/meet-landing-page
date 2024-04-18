@@ -68,6 +68,16 @@ p {
     font-family: var(--font-family);
     font-weight: 500;
 }
+button {
+    font-weight: inherit;
+    font-family: inherit;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 1.8125rem;
+    line-height: inherit;
+    color: #fff;
+    cursor: pointer;
+}
 main img {
     width: 100%;
     object-fit: cover;
@@ -87,7 +97,36 @@ header {
 
 
 .logo {
+    margin-top: 3rem;
     margin-bottom: 3.5rem;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    margin: 2rem auto 0;
+}
+.blue {
+    background-color: var(--btn-bg-primary-color);
+}
+.blue span {
+    color: #8FE3F9;
+}
+.blue:hover {
+    background-color: #71c0d4
+}
+.purple {
+    background-color: var(--btn-bg-secondary-color);
+}
+.purple span {
+    color: #D9B8FF;
+}
+.purple:hover {
+    background-color: #b18bdd;
 }
 
 
