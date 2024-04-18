@@ -10,6 +10,8 @@
     --font-family: 'Red-Hat-Display-500', sans-serif;
     --font-family-bold: 'Red-Hat-Display-900', sans-serif;
 
+    --background-color-primary: var(var(--text-color-secondary));
+
     --text-color-primary: #87879d;
     --text-color-secondary: #fafafa;
 
@@ -20,8 +22,209 @@
     --btn-text-primary-color: #fff;
     --btn-text-secondary-color: #8fe3f9;
 
+    --primary-header-font-size: clamp(2.5rem, 5vw, 4rem);
+    --secondary-header-font-size: clamp(2rem, 3vw, 2.5rem);
+    --secondary-text-font-size: clamp(1rem, 3vw, 1.125rem);
+
     --btn-bg-primary-color: #4d96a9;
     --btn-bg-secondary-color-hover: #71c0d4;
     --btn-bg-secondary-color: #855fb1;
     --btn-bg-secondary-color-hover: #b18bdd;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--font-family-bold);
+    font-weight: 900;
+    font-size: 16px;
+    color: var(--text-color-primary);
+    background-color: var(--background-color-primary);
+    line-height: 1.625;
+    text-align: center;
+}
+h1, h2 {
+    line-height: 1.125;
+}
+header h1 {
+    font-size: var(--primary-header-font-size);
+}
+header p,
+main p {
+    font-size: var(--secondary-text-font-size);
+
+}
+main h2,
+footer h2 {
+    font-size: var(--secondary-header-font-size);
+}
+header h1,
+main h2 {
+    color: var(--header-color-primary);
+}
+p {
+    font-family: var(--font-family);
+    font-weight: 500;
+}
+main img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5em;
+}
+
+.container {
+    max-width: clamp(30rem, 90%, 70rem);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+
+header {
+    margin-bottom: 4rem
+}
+
+
+.logo {
+    margin-bottom: 3.5rem;
+}
+
+
+.header__texts {
+    margin: 0 auto;
+}
+header section h1 {
+    max-inline-size: 10ch;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+header section p {
+    margin-bottom: 2rem;
+    max-inline-size: 30ch;
+    margin: 0 auto;
+}
+
+
+.img-left {
+    background-image: url(../assets/tablet/image-hero.png);
+    background-position: center;
+    background-size: cover;
+    height: 10rem;
+    margin-bottom: 4rem;
+}
+
+
+main .images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    width: 100%;
+    max-width: 70rem;
+    justify-items: center;
+    gap: 1.5rem;
+    margin: 0 auto;
+}
+.main-description__starter {
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    color: #4d96a9;
+    font-weight: 900;
+    margin-top: 3.5rem;
+}
+
+
+.divider {
+    color: rgba(135, 135, 157);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.divider__line {
+    height: 5.25rem;
+    width: 0.0625rem;
+    background: rgba(135, 135, 157, 0.25);
+}
+.divider__text {
+    font-weight: 900;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.d-two {
+    margin-top: 4rem;
+    margin-bottom: -1.75rem;
+}
+.d-two .divider__text {
+    background-color: #fafafa;
+}
+footer {
+    background-image: 
+        linear-gradient(to bottom, rgba(77, 150, 168, 0.8), rgba(77, 150, 168, 0.8)), 
+        url(../assets/mobile/image-footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem 0;
+    color: #fafafa;
+}
+main p,
+footer p {
+    margin: 1.5rem auto 2rem auto;
+    max-inline-size: 25ch;
+}
+
+
+@media screen and (min-width: 650px) {
+    .img-left {
+        height: 20rem;
+    }
+    header section p {
+        max-inline-size: 40ch;
+    }
+    main p,
+    footer p {
+        max-inline-size: 55ch;
+    }
+    footer {
+        background-image: 
+        linear-gradient(to bottom, rgba(77, 150, 168, 0.8), rgba(77, 150, 168, 0.8)), 
+        url(../assets/tablet/image-footer.jpg);
+    }
+}
+@media screen and (min-width: 950px) {
+    header section {
+        display:  flex;
+        gap: 3rem;
+        align-items: center;
+    }
+    header section div {
+        flex: 1;
+    }
+    header section h1 {
+        margin-bottom: 2rem;
+    }
+    .img-left {
+        background-image: url(../assets/desktop/image-hero-left.png);
+        background-position: right;
+    }
+    .img-right {
+        background-image: url(../assets/desktop/image-hero-right.png);
+        background-position: left;
+    }
+    .img-left,
+    .img-right {
+        background-size: cover;
+        height: 22.4rem;
+    }
+    footer {
+        background-image: 
+        linear-gradient(to bottom, rgba(77, 150, 168, 0.8), rgba(77, 150, 168, 0.8)), 
+        url(../assets/desktop/image-footer.jpg);
+    }
 }
