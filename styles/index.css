@@ -169,6 +169,10 @@ main .images {
     gap: 1.5rem;
     margin: 3rem auto 0;
 }
+.main-description h2 {
+    max-inline-size: 14ch;
+    margin: 0 auto;
+}
 .main-description__starter {
     letter-spacing: 0.25rem;
     text-transform: uppercase;
@@ -241,6 +245,9 @@ footer p {
         gap: 1rem;
         width: 100%;
         justify-content: center;
+    }
+    .main-description h2 {
+        max-inline-size: 15ch;
     }
     footer {
         background-image: 
